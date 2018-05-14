@@ -1,0 +1,722 @@
+$black: #000;
+$white: #fff;
+$opacity: .5;
+$bg: rgba(24, 23, 25, .47);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Hind Guntur', sans-serif;
+  position: relative;
+  overflow: visible;
+}
+
+.clear {
+  clear: both;
+}
+
+a {
+  color: $black;
+  text-decoration: none;
+}
+
+header {
+  height: 60px;
+  line-height: 40px;
+  margin: auto;
+  width: 70%;
+
+  .nav-icon {
+    display: none;
+}
+
+
+  .logo {
+    color: $black;
+    float: left;
+    font-size: 20px;
+    padding-left: 30px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+  ul {
+    display: inline;
+    float: right;
+    list-style-type: none;
+    margin-right: 100px;
+    margin-top: 10px;
+
+    li {
+      color: $black;
+      display: inline;
+      font-size: 15px;
+      padding: 10px;
+      text-align: center;
+}
+}
+}
+
+.cover-description {
+  background-color: $bg;
+  color: $white;
+  height: 40%;
+  left: 6%;
+  padding: 20px 10px;
+  position: absolute;
+  text-align: center;
+  top: 30%;
+  width: 85%;
+
+  p,
+  h2 {
+    color: $white;
+    padding-bottom: 5px;
+  }
+}
+
+.cover {
+  height: 500px;
+
+  img {
+    height: 100%;
+    width: 100%;
+	}
+
+  .ls {
+    float: left;
+    height: 500px;
+    padding-right: .3%;
+    width: 24.7%;
+
+    img {
+      height: 50%;
+      padding-bottom: 5px;
+  	}
+}
+
+  $arrow-nav-color: rgb(178, 178, 183);
+
+  .m {
+    display: inline;
+    float: left;
+    height: 100%;
+    padding-left: 1%;
+    padding-right: 1%;
+    position: relative;
+    width: 50.5%;
+
+    img {
+      height: 495px;
+  	}
+
+    .arrow-nav {
+      bottom: 10%;
+      color: $arrow-nav-color;
+      position: absolute;
+      right: 10%;
+      width: 5%;
+
+    }
+}
+
+  .rs {
+    float: left;
+    height: 500px;
+    padding-left: .3%;
+    width: 24.7%;
+
+    img {
+      height: 50%;
+      padding-bottom: 5px;
+  	}
+
+  }
+}
+
+.search-box {
+  margin: auto;
+  margin-top: 5%;
+  position: relative;
+  text-align: center;
+  width: 80%;
+
+input {
+  position: relative;
+  text-align: center;
+  width: 40%;
+}
+
+button {
+  float: left;
+  position: absolute;
+}
+}
+
+
+
+
+$border-color: rgba(0, 0, 0, .5);
+
+.article {
+
+  display: inline;
+  float: left;
+  height: auto;
+  margin: auto;
+  padding: 2%;
+  width: 46%;
+
+  .preview {
+    height: 60%;
+    margin-bottom: 10px;
+    position: relative;
+
+    .tag {
+      background-color: $white;
+      bottom: 0;
+      color: $border-color;
+      //height: 5%;
+      left: 35%;
+      position: absolute;
+      right: 35%;
+      text-align: center;
+      width: 30%;
+}
+}
+
+  .description {
+    height: 40%;
+
+    p {
+      height: 40px;
+      overflow: hidden;
+    }
+
+    .header {
+      margin-bottom: 10px;
+    }
+
+    .datestamp {
+      margin-bottom: 10px;
+    }
+
+    .blog-content {
+      margin-bottom: 10px;
+    }
+
+    .blog-footer {
+      border-bottom: 1px solid $border-color;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+    }
+
+    .comments {
+      display: block;
+      float: left;
+      height: 10px;
+      }
+}
+
+  }
+
+.content {
+  height: 100%;
+  margin: auto;
+  margin-top: 3%;
+  position: relative;
+  width: 75%;
+
+  .noresult {
+    background-color: grey;
+    border: 1px solid grey;
+    border-radius: 10px;
+    color: $white;
+    display: none;
+    height: 20%;
+    margin: auto;
+    text-align: center;
+    width: 20%;
+
+  }
+
+  h1 {
+    color: $black;
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    text-align: center;
+    width: 100%;
+    }
+
+  h2,
+  p {
+    font-size: 100%;
+    opacity: .7;
+  }
+
+  i {
+    opacity: .7;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    }
+
+  .recent {
+    height: 100%;
+    width: 100%;
+  }
+
+  .feature {
+    height: 100%;
+    margin-top: 4%;
+    width: 100%;
+  }
+}
+
+$footer-text-color: rgba(255, 255, 255, .5);
+$border-color: rgba(12, 12, 12, .27);
+
+.pages {
+  //background-color: $footer-text-color;
+  height: 5%;
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-top: 5%;
+  text-align: center;
+  width: 20%;
+
+  a {
+    display: block;
+    padding: 4px 8px;
+  }
+  
+
+  button {
+    border: 1px solid $border-color;
+    border-radius: 7px;
+    position: relative;
+
+
+    :visited {
+      background-color: $black;
+    }
+
+    .active-button {
+      background-color: #716a6a;
+      color: $white;
+  }
+  }
+
+  ul {
+    list-style-type: none;
+
+    li {
+      background-color: $border-color;
+      border: 1px solid $border-color;
+      border-radius: 7px;
+      display: inline;
+      float: left;
+      text-align: center;
+    }
+
+    
+
+  }
+}
+
+.footer-images {
+  height: 15%;
+  margin-top: 5%;
+  width: 100%;
+
+  .f-image {
+    float: left;
+    width: 16.66%;
+  }
+
+  img {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+$footer-icon: rgba(35, 33, 33, .5);
+
+.lb-dataContainer {
+  position: absolute;
+  right: 19.5%;
+  top: 3%;
+  width: 750px;
+}
+
+.footer {
+  background-color: $black;
+  color: $footer-text-color;
+  height: 50px;
+  margin-top: -1%;
+  position: relative;
+  width: 100%;
+
+  .footer-content {
+    margin: 0 10%;
+    //padding-top: 10px;
+    //position: relative;
+    width: 80%;
+  }
+
+  .footer-icon {
+    background-color: $footer-icon;
+    bottom: 2%;
+    color: $white;
+    float: right;
+    //height: 10px;
+    padding: .2% .7%;
+    position: fixed;
+    right: 2%;
+    //width: 15px;
+  }
+
+  a {
+    color: $footer-text-color;
+      }
+
+  p {
+    display: inline;
+    height: 50%;
+    line-height: 50%;
+    margin-left: 10%;
+    //position: relative;
+    width: 50%;
+  }
+
+  ul {
+    display: inline;
+    float: right;
+    list-style-type: none;
+    //position: absolute;
+    right: 5%;
+    top: 2%;
+
+    li {
+      color: $footer-text-color;
+      display: inline;
+      font-size: 10px;
+      padding: 10px;
+      text-align: center;
+
+}
+}
+}
+
+@media screen and (max-width: 767px) {
+
+  header {
+    height: 80px;
+    position: relative;
+    width: 100%;
+
+    .logo {
+      font-size: 30px;
+      right: 10px;
+      top: 10px;
+  }
+
+    .top-nav-bar {
+      display: none;
+    }
+
+    .nav-icon {
+      color: $footer-icon;
+      display: block;
+      float: right;
+      font-size: 25px;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      }
+ }
+
+  .cover {
+
+    .ls {
+      padding: 0;
+      width: 100%;
+
+      img {
+        padding-bottom: 4%;
+        width: 100%;
+    }
+  }
+
+    .m {
+      padding: 0;
+      width: 100%;
+
+      .cover-description {
+        font-size: .8em;
+        height: 80%;
+        left: 0;
+        padding: 0;
+        top: 0;
+        width: 100%;
+      }
+
+      img {
+        padding-bottom: 4%;
+        width: 100%;
+    }
+  }
+
+    .rs {
+      margin-bottom: 50px;
+      padding: 0;
+      width: 100%;
+
+      img {
+        padding-bottom: 4%;
+        width: 100%;
+    }
+  }
+ }
+
+  .content {
+    width: 100%;
+
+    h2,
+    p {
+      font-size: .7em;
+    }
+
+    .recent {
+      height: 100%;
+      width: 100%;
+
+      h1 {
+        text-align: center;
+        width: 100%;
+  }
+
+      .article {
+        height: 100%;
+        margin: 8%;
+        width: 83.9%;
+  }
+}
+
+    .feature {
+
+      height: 100%;
+      width: 100%;
+
+      h1 {
+        text-align: center;
+        width: 100%;
+     }
+
+      .article {
+        height: 100%;
+        margin: 10%;
+        width: 83.9%;
+     }
+  }
+}
+
+  .footer {
+
+    height: 90px;
+
+    .footer-content {
+      //height: 100%;
+      padding-top: 2%;
+      text-align: center;
+      //width: 100%;
+
+      p {
+        display: block;
+        //line-height: 100%;
+        font-size: .7em;
+        margin-bottom: 10px;
+        margin-left: 0;
+        margin-top: 25px;
+       // text-align: center;
+        width: 100%;
+
+  }
+
+      ul {
+        //display: block;
+        float: none;
+        //margin-left: 20%;
+        //text-align: center;
+        //margin-top: 5%;
+        width: 100%;
+
+        li {
+          padding: 0;
+          margin-right: 4px;
+        }
+     }
+  }
+}
+
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px)
+{
+  header {
+    height: 80px;
+    width: 100%;
+
+    .logo {
+      font-size: 30px;
+      right: 50px;
+      top: 50px;
+  }
+
+    .top-nav-bar {
+      display: none;
+    }
+
+    .nav-icon {
+      color: $footer-icon;
+      display: block;
+      float: right;
+      font-size: 25px;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      }
+
+ }
+
+  .cover {
+    overflow: hidden;
+
+    .pr {
+      padding-right: 4%;
+    }
+
+    .ls {
+      width: 100%;
+
+      img {
+        width: 47%;
+      }
+  }
+
+    .m {
+      padding-bottom: 1.5%;
+      padding-left: 0;
+      padding-top: 1.5%;
+      width: 100%;
+
+      .cover-description {
+        left: 0;
+        width: 100%;
+      }
+  }
+
+    .rs {
+      padding-bottom: 4%;
+      width: 100%;
+
+      img {
+        width: 47%;
+      }
+  }
+
+ }
+
+  .content {
+    width: 100%;
+
+    h2,
+    p {
+      font-size: 12px;
+        }
+
+    .recent {
+      height: 100%;
+      margin: none;
+      width: 100%;
+
+      h1 {
+        text-align: center;
+        width: 100%;
+  }
+
+      .article {
+        //height: 100%;
+        margin: auto;
+        padding: 1.5%;
+        width: 47%;
+  }
+}
+
+    .feature {
+
+      height: 100%;
+      margin: none;
+      margin-top: 5%;
+      width: 100%;
+
+      h1 {
+        text-align: center;
+        width: 100%;
+     }
+
+      .article {
+        //height: 100%;
+        margin: auto;
+        padding: 1.5%;
+        width: 47%;
+     }
+  }
+}
+
+  .footer-images {
+    height: 15%;
+    margin-top: 5%;
+    width: 100%;
+}
+
+  .footer {
+
+    height: 80px;
+
+    .footer-content {
+      //height: 100%;
+      //padding-top: 3%;
+      //width: 100%;
+
+      p {
+        margin-left: 5%;
+        width: 50%;
+  }
+
+      ul {
+        float: none;
+        margin-left: 9%;
+        margin-top: 5%;
+        width: 50%;
+     }
+  }
+
+    .footer-icon {
+      //padding: 5px;
+      //padding-bottom: 10px;
+      right: 5%;
+      bottom: 2%;
+
+    }
+}
+
+}
